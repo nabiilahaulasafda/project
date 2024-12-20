@@ -4,7 +4,7 @@ include("../koneksi.php");
 
 $id = $_GET['xyz'];
 
-$hapus = "DELETE FROM dosens WHERE id='$id' ";
+$hapus = "DELETE FROM mahasiswas WHERE nim='$id' ";
 
 $proses = mysqli_query($koneksi, $hapus);
 
@@ -13,6 +13,5 @@ $proses = mysqli_query($koneksi, $hapus);
 ?>
 
 <script>
-    document.location="index.php";
+    document.location = "index.php";
 </script>
-

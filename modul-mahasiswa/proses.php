@@ -2,14 +2,21 @@
 
 include("../koneksi.php");
 
-$nidn = $_POST['nidn'];
+$nim = $_POST['nim'];
 $nama = $_POST['nama'];
-$jabatan = $_POST['jabatan'];
+$tempat = $_POST['tempat'];
+$tanggal = $_POST['tanggal'];
+$alamat = $_POST['alamat'];
 $email = $_POST['email'];
-$hp = $_POST['hp'];
+$jk = $_POST['jk'];
+$jur = $_POST['jur'];
+$dos = $_POST['dos'];
 
-$simpan = "INSERT INTO dosens (nidn,nama,jabatan,email,hp) VALUES ('$nidn','$nama',
-'$jabatan','$email','$hp')";
+$nama_foto = $_FILES['foto']['name'];
+$tmp_foto = $_FILES['foto']['tmp_name'];
+
+$simpan = "INSERT INTO mahasiswas (nim,nama,tempat,tgl,alamat,email,jk,jurusans_id,dosens_id,foto) 
+VALUES ('$nim','$nama','$tempat','$tanggal','$alamat','$email','$jk','$jur','$dos','$nama_foto')";
 
 $proses = mysqli_query($koneksi, $simpan);
 
@@ -18,6 +25,5 @@ $proses = mysqli_query($koneksi, $simpan);
 ?>
 
 <script>
-    document.location="index.php";
+    document.location = "index.php";
 </script>
-

@@ -3,10 +3,14 @@
 include("../koneksi.php");
 
 $id = $_POST['id'];
-$kode = $_POST['kode'];
-$jurusan = $_POST['jurusan'];
+$nidn = $_POST['nidn'];
+$nama = $_POST['nama'];
+$jabatan = $_POST['jabatan'];
+$email = $_POST['email'];
+$hp = $_POST['hp'];
 
-$sunting ="UPDATE jurusans SET kode='$kode', jurusan='$jurusan' WHERE id='$id'";
+$sunting = "UPDATE dosens SET nidn='$nidn', nama='$nama', jabatan='$jabatan',
+email='$email', hp='$hp' WHERE id='$id'";
 
 $proses = mysqli_query($koneksi, $sunting);
 // untuk mengalihkan halaman diphp
@@ -14,5 +18,5 @@ $proses = mysqli_query($koneksi, $sunting);
 ?>
 
 <script>
-    document.location="index.php";
+    document.location = "index.php";
 </script>
