@@ -1,6 +1,3 @@
-<?php
-include_once("ceklogin.php");
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,7 +56,7 @@ include_once("ceklogin.php");
                                         <td> <?= $data['nim'] ?> </td>
                                         <td> <?= $data['nm_mhs'] ?> </td>
                                         <td> <?= $data['jk'] ?> </td>
-                                        <td> <?= $data['jurusans_id'] ?> </td>
+                                        <td> <?= $data['jurusan'] ?> </td>
                                         <td> <?= $data['nm_dos'] ?> </td>
                                         <td>
                                             <!-- TOMBOL DETAIL -->
