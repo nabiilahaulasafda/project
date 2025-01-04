@@ -31,11 +31,18 @@ if (isset($_POST['tombol'])) {
         <i class="fa-solid fa-triangle-exclamation"></i>  password baru dan konfirmasi tidak sesuai !
       </div>';
     } else {
+        $sql_ubah = "UPDATE users SET password='$pass2' WHERE id='$login_id'";
+        $qry_ubah = mysqli_query($koneksi, $sql_ubah);
+
+        // jika ingin setelah di ganti password berganti halaman
+        // header("location:logout.php");
+
         $pesan = '<div class="alert alert-success" role="alert">
         <i class="fa-solid fa-triangle-exclamation"></i>  ubah password berhasil!
       </div>';
     }
-    // 3.2. 
+    // admin@gmail.com (Admin12345)
+    // nabiilah@gmail.com (nabiilah12345)
 
 }
 ?>
