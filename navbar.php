@@ -19,6 +19,9 @@
           <a class="nav-link active" aria-current="page" href="/biila_is62/project/modul-dosen/index.php">Data Dosen</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/biila_is62/project/ubah-password.php">Ubah Password</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/biila_is62/project/logout.php">Log Out</a>
         </li>
       </ul>
